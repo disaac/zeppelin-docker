@@ -88,7 +88,7 @@
 # export ZEPPELIN_IMPERSONATE_SPARK_PROXY_USER  #Optional, by default is true; can be set to false if you don't want to use --proxy-user option with Spark interpreter when impersonation enabled
 
 export SPARK_HOME=/usr/local/spark
-export SPARK_SUBMIT_OPTIONS="--driver-memory 512M --executor-memory 1G"
+export SPARK_SUBMIT_OPTIONS="--driver-memory 1G --executor-memory 4G"
 export ZEPPELIN_SPARK_CONCURRENTSQL=true
 
 export HADOOP_CONF_DIR=/usr/local/hadoop/conf
