@@ -11,6 +11,9 @@ RUN cd /usr/local && ln -s ./zeppelin-0.7.0-bin-all zeppelin
 
 ENV ZEPPELIN_HOME /usr/local/zeppelin
 ADD zeppelin-env.sh $ZEPPELIN_HOME/conf/
+ADD bootstrap-zeppelin.sh /etc/
+RUN chown root.root /etc/bootstrap-zeppelin.sh
+RUN chmod 777 /etc/bootstrap-zeppelin.sh
 
-CMD ["/usr/local/zeppelin/bin/zeppelin-daemon.sh"]
+ENTRYPOINT ["/etc/bootstrap-zeppelin.sh"]
 
