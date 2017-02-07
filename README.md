@@ -24,7 +24,7 @@ or just pull from the docker hub
 To run the instance, you will need to expose the ports for zeppelin + ports for spark + ports for hadoop/YARN, thus
 
 ```shell
-  docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -p 8090:8090 -h sandbox timmyraynor/zeppelin-docker bash
+  docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -p 8090:8090 -p 50070:50070 -h sandbox timmyraynor/zeppelin-docker bash
 ```
 
 the above used *sandbox* as the hostname for the instance that is because of the yarn-site.xml files is using *sandbox* as the localhost.
@@ -33,7 +33,7 @@ the above used *sandbox* as the hostname for the instance that is because of the
 with the ports published in the above command, here list the corresponding services:
   - 8088 YARN
   - 8090 Zeppelin
-  - 4040 HDFS
+  - 50070 HDFS GUI
   - 8042 hadoop ui
 
 
