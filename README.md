@@ -49,4 +49,12 @@ You could always reattach to the running in backend instance using
   docker exec -it <CONTAINER ID> /bin/bash
 ```
 
+# docker compose
+docker compose is now supported in this image, git clone and then run
+
+```shell
+  docker-compose up
+```
+
+Will give you the right build with minio as the object exchange server
 
