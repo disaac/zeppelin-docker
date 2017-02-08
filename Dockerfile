@@ -1,4 +1,4 @@
-FROM timmyraynor/spark:latest
+FROM timmyraynor/spark:1.0
 MAINTAINER Tim.Qin<qinyujue@gmail.com>
 
 # add python into for pyspark
