@@ -97,3 +97,5 @@ export PYTHONPATH=${SPARK_HOME}/python:${SPARK_HOME}/python/build:$PYTHONPATH
 
 export MASTER=yarn-client
 export ZEPPELIN_PORT=8090
+
+export ZEPPELIN_JAVA_OPTS="-Dfile.encoding=utf8"
